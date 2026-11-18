@@ -123,8 +123,7 @@ function HomePage() {
     setIsSubmitting(true)
 
     try {
-      const response = await fetch(
-        'http://localhost:5000/api/enquiries',
+      const API_URL = 'https://jurismax2-0.onrender.com';
         {
           method: 'POST',
           headers: {

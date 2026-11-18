@@ -17,7 +17,7 @@ import {
   Download
 } from 'lucide-react';
 
-const API_URL = 'http://localhost:5000';
+const API_URL = 'https://jurismax2-0.onrender.com';
 const LOGO_URL = '/jurismax-logo.avif';
 
 function AdminDashboard() {
