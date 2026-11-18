@@ -1,4 +1,3 @@
-
 import { useState } from 'react'
 import './App.css'
 import AdminDashboard from './Admin.jsx'
@@ -123,15 +122,15 @@ function HomePage() {
     setIsSubmitting(true)
 
     try {
-      const API_URL = 'https://jurismax2-0.onrender.com';
-        {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(formData),
-        }
-      )
+      const API_URL = 'https://jurismax2-0.onrender.com'
+
+      const response = await fetch(`${API_URL}/api/enquiries`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
 
       const data = await response.json()
 
