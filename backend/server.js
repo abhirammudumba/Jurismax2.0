@@ -10,7 +10,7 @@ require('dotenv').config();
 
 dns.setServers(['8.8.8.8', '8.8.4.4']);
 
-const Enquiry = require('./models/Enquiry');
+const Enquiry = require('./models/enquiry');
 const protectAdmin = require('./middleware/auth');
 
 const app = express();
